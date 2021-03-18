@@ -1,0 +1,222 @@
+/* Patrones Globales del CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, h6, a, button { font-family: 'Big Shoulders Display', cursive; }
+
+/* Tipografía Secundaria */
+h4, h5, p, div, form, input, select, option, textarea, span, em, strong { font-family: 'Roboto Condensed', sans-serif; }
+
+/* Quitar el Margen por defecto que trae Body */
+body { margin: 0 !important; }
+
+/* Cargar el display: block; a todos los tags de estructura */
+header, main, section, footer, aside, article, nav, figure, figcaption, div { display: block; }
+
+/* Quitar margen por defecto a todas las tags de texto */
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
+
+/* Quitar scroll horizontal del Body */
+body { overflow-x: hidden; background: #000; }
+
+
+
+/* ----------------------------------------------------------------- */
+
+
+/* CSS propio */
+
+/* Componente PopUp */
+aside#pop-up { width: 100%; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99999; background: rgba(0,0,0,0.93); }
+
+aside#pop-up figure { width: 550px; height: 550px; display: block; margin: 8vh auto; float: none; position: relative; }
+
+aside#pop-up figure a#cerrar-popup { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: -20px; right: -20px; z-index: 99996; color: #fff; background: rgb(0, 0, 0); text-align: center; font-size: 1.3em; padding: 8px 0; border-radius: 50%; transition: all 0.3s ease-in; }
+aside#pop-up figure a#cerrar-popup:hover { color: #fff; background: #f50; transition: all 0.3s ease-in; }
+
+aside#pop-up figure a#img-popup { width: 100%; height: 100%; display: block; margin: 0 auto; float: none; position: absolute; top: 0; left: 0; border-radius: 5px; overflow: hidden; transition: all 0.3s ease-in; }
+aside#pop-up figure a#img-popup img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+aside#pop-up figure a#img-popup:hover { opacity: 0.9; transition: all 0.3s ease-in; }
+aside#pop-up figure a#img-popup:hover img { filter: saturate(2); transform: scale(1.03); transition: all 0.3s ease-in; }
+
+
+/* Componente Menú Móviles */
+aside#menu-movil { width: 290px; height: 100%; display: block; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 9999; background: rgb(150, 150, 150); }
+
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#abrir:hover { color: #000; transition: all 0.3s ease-in; }
+
+.azul { color: #000000; }
+.blanco { color: rgb(70, 70, 70); }
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 30px; right: -60px; z-index: 99996; color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#cerrar:hover { color: #999; transition: all 0.3s ease-in; }
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in; }
+
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 9998; margin: 0; float: none; }
+header article { width: 1100px; height: 100px; position: relative; margin: 0 auto; float: none; }
+
+header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0 auto; float: none; top: 10px; }
+header article a img { width: auto; height: 80px; display: block; position: relative; margin: 0 auto; float: none; }
+
+.transparente { background: rgb(220 220 220); }
+.gris { background: rgb(144 144 144); }
+
+
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+
+
+/* Slider Home */
+main section#slider-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; /* background: url(../img/slider-01.jpg) no-repeat top center; background-size: cover; */ }
+main section#slider-home article { width: 100%; height: 100vh; position: relative; margin: 0 auto; float: none; }
+main section#slider-home article figure { width: 100%; height: 100vh; position: relative; margin: 0; float: left; }
+main section#slider-home article figure.slider-01 { background: url(../img/slider-01.jpg) no-repeat top center; background-size: cover; }
+main section#slider-home article figure.slider-02 { background: url(../img/slider-02.jpg) no-repeat top center; background-size: cover; }
+main section#slider-home article figure.slider-03 { background: url(../img/slider-03.jpg) no-repeat top center; background-size: cover; }
+
+.slick-next { right: 30px !important; z-index: 999 !important; }
+.slick-prev { left: 30px !important; z-index: 999 !important; }
+
+.slick-dots { bottom: 30px !important; }
+.slick-dots li button { width: 10px !important; height: 10px !important; }
+.slick-dots li button:before { width: 10px !important; height: 10px !important; font-size: 1em !important; color: transparent !important; border-radius: 50% !important; background: #f50 !important; opacity: 1 !important; }
+.slick-dots li.slick-active button:before { color: transparent !important; background: #fff !important; opacity: 1 !important; }
+
+
+
+/* Componente Banner */
+main section#banner { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+main section#banner nav { width: 100%; height: 560px; position: relative; margin: 0 auto; float: none; background: #000; }
+main section#banner nav a { position: absolute; display: block; transition: 0.3s ease-in; }
+main section#banner nav a:hover { opacity: 0.55; transition: 0.3s ease-in; }
+main section#banner nav a#img-banner-01 { width: 50%; height: 100%; top: 0; left: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
+main section#banner nav a#img-banner-02 { width: 50%; height: 50%; top: 0; right: 0; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
+main section#banner nav a#img-banner-03 { width: 15%; height: 50%; bottom: 0; right: 35%; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
+main section#banner nav a#img-banner-04 { width: 35%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
+
+
+
+/* Componente Grid Instagram */
+main section#grid-instagram { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#grid-instagram article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; padding: 60px 0; }
+main section#grid-instagram article a { width: 330px; height: 330px; position: relative; margin: 17px; float: none; display: inline-block; overflow: hidden; transition: all 0.3s ease-in; }
+main section#grid-instagram article a img { width: 100%; height: auto; display: block; margin: 0 auto; float: none; position: relative; transition: all 0.3s ease-in; }
+main section#grid-instagram article a:hover { opacity: 0.9; transition: all 0.3s ease-in; }
+main section#grid-instagram article a:hover img { transform: scale(1.05); transition: all 0.3s ease-in; }
+
+
+
+/* Componente Fotos Home */
+main section#fotos-home { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; }
+
+main section#fotos-home a#btn-naranja { width: 50px; height: auto; display: block; float: none; position: absolute; top: -25px; left: 150px; z-index: 50; border-radius: 50%; color: #fff; background: #f50; text-align: center; text-decoration: none; font-size: 2.5em; line-height: 1em; padding: 5px 0; transition: all 0.3s ease-in; }
+main section#fotos-home a#btn-naranja:hover { transform: rotate(-45deg); background: #000; transition: all 0.3s ease-in; }
+
+main section#fotos-home nav { width: 100%; height: 1000px; position: relative; margin: 0 auto; float: none; background: #000; }
+main section#fotos-home nav a { position: absolute; display: block; transition: 0.3s ease-in; }
+main section#fotos-home nav a:hover { opacity: 0.55; transition: 0.3s ease-in; }
+
+main section#fotos-home nav a#img-fotos-home-01 { width: 50%; height: 50%; top: 0; left: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-02 { width: 25%; height: 25%; top: 0; right: 25%; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-03 { width: 25%; height: 25%; top: 0; right: 0; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-04 { width: 50%; height: 25%; top: 25%; right: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-05 { width: 50%; height: 25%; bottom: 25%; left: 0; background: url(../img/fotos-grupo-1-004.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-06 { width: 25%; height: 25%; bottom: 0; left: 0; background: url(../img/fotos-grupo-1-002.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-07 { width: 25%; height: 25%; bottom: 0; left: 25%; background: url(../img/fotos-grupo-1-003.jpg) no-repeat top center; background-size: cover; }
+
+main section#fotos-home nav a#img-fotos-home-08 { width: 50%; height: 50%; bottom: 0; right: 0; background: url(../img/fotos-grupo-1-001.jpg) no-repeat top center; background-size: cover; }
+
+
+
+footer { width: 100%; height: 300px; position: relative; margin: 0 auto; float: none; background: rgb(144 144 144); }
+
+
+
+
+
+/* Zona de Media Queries */
+
+/* MQ para Tablets = Breakpoint 1199px */
+@media only screen and (max-width: 1199px){
+    aside#menu-movil a#abrir,
+    aside#menu-movil a#cerrar { top: 22px; }
+
+
+    header { height: 80px; }
+    header article { width: 90%; height: 80px; }
+    header article a { width: 104px; height: 50px; margin: 0; float: right; top: 15px; }
+    header article a img { width: 60%; height: auto; }
+
+
+    main { margin: 80px auto 0 auto; }
+
+
+
+    main section#slider-home article { height: 75vh; }
+    
+
+
+    main section#banner nav { height: 470px; }
+    main section#banner nav a { position: relative; float: left; }
+    main section#banner nav a#img-banner-01 { width: 50%; height: 50%; }
+    main section#banner nav a#img-banner-02 { width: 50%; height: 50%; }
+    main section#banner nav a#img-banner-03 { width: 50%; height: 50%; right: 0; }
+    main section#banner nav a#img-banner-04 { width: 50%; height: 50%; }
+
+
+    main section#grid-instagram article { width: 80%; }
+    main section#grid-instagram article a { width: 300px; height: 300px; margin: 0 auto 35px; display: block; }
+
+
+
+    main section#fotos-home nav { height: 1030px; }
+
+    main section#fotos-home a#btn-naranja { top: 25px; left: 25px; }
+
+    main section#fotos-home nav a { position: relative; float: left; }
+
+    main section#fotos-home nav a#img-fotos-home-01 { width: 100%; height: 290px; }
+
+    main section#fotos-home nav a#img-fotos-home-02,
+    main section#fotos-home nav a#img-fotos-home-03,
+    main section#fotos-home nav a#img-fotos-home-04,
+    main section#fotos-home nav a#img-fotos-home-05,
+    main section#fotos-home nav a#img-fotos-home-06,
+    main section#fotos-home nav a#img-fotos-home-07 { width: 50%; height: 150px; }
+
+    main section#fotos-home nav a#img-fotos-home-02 { right: 0; }
+    main section#fotos-home nav a#img-fotos-home-04 { top: 0; }
+    main section#fotos-home nav a#img-fotos-home-05 { bottom: 0; }
+    main section#fotos-home nav a#img-fotos-home-07 { left: 0; }
+
+    main section#fotos-home nav a#img-fotos-home-08 { width: 100%; height: 290px; }
+}
+
+/* Breakpoint 699px */
+@media only screen and (max-width: 699px){
+    aside#pop-up figure { width: 80%; height: 80%; }
+}
+
+/* MQ para Móviles Grandes = Breakpoint 499px */
+@media only screen and (max-width: 499px){
+    
+}
+
+/* MQ para Móviles Pequeños = Breakpoint 399px */
+@media only screen and (max-width: 399px){
+    main section#grid-instagram article a { width: 100%; height: auto; }
+}

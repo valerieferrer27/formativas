@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Nueve Once</title>
+        <meta title="Nueve Once">
+        <meta charset="utf-8">
+        <link rel="icon" href="img/logo.png">
+
+        <!-- Meta que permite la correcta visualización en Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Librería PrefixFree -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <!-- Llamado a librería de Íconos: FontAwesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+        <!-- Llamado a Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Cargar CSS propio -->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body class="fondo-dark">
+        <!-- Componente PopUp -->
+        <aside id="pop-up">
+            <figure>
+                <a href="#" id="cerrar-popup">
+                    <i class="fas fa-times"></i>
+                </a>
+
+                <a href="https://www.instagram.com/p/CMibELOhukX/?igshid=1nh0e6kpm00wp" target="_blank" id="img-popup">
+                    <img src="img/popup.jpg">
+                </a>
+            </figure>
+        </aside>
+
+
+
+        <aside id="menu-movil">
+            <a href="#" id="abrir" class="blanco">
+                <i class="fas fa-bars"></i>
+            </a>
+
+            <a href="#" id="cerrar">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Diseños</a>
+                <a href="#">Contáctanos</a>
+            </nav>
+        </aside>
+
+        <header class="transparente">
+            <article>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Título de la Página">
+                </a>
+            </article>
+        </header>
+
+        <main>
+            <section id="slider-home">
+                <article class="slick-inicio">
+                    <figure class="slider-01"></figure>
+                    <figure class="slider-02"></figure>
+                    <figure class="slider-03"></figure>
+                </article>
+            </section>
+
+            <section id="banner">
+                <nav>
+                    <a data-fancybox="galeria-1" href="img/fotos-grupo-1-001.jpg" id="img-banner-01"></a>
+                    <a data-fancybox="galeria-1" href="img/fotos-grupo-1-002.jpg" id="img-banner-02"></a>
+                    <a data-fancybox="galeria-1" href="img/fotos-grupo-1-003.jpg" id="img-banner-03"></a>
+                    <a data-fancybox="galeria-1" href="img/fotos-grupo-1-004.jpg" id="img-banner-04"></a>
+                </nav>
+            </section>
+
+            <section id="grid-instagram">
+                <article>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-001.jpeg">
+                        <img src="img/fotos-grupo-2-001.jpeg">
+                    </a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-002.jpeg">
+                        <img src="img/fotos-grupo-2-002.jpeg">
+                    </a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-003.jpeg">
+                        <img src="img/fotos-grupo-2-003.jpeg">
+                    </a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-004.jpeg">
+                        <img src="img/fotos-grupo-2-004.jpeg">
+                    </a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-005.jpeg">
+                        <img src="img/fotos-grupo-2-005.jpeg">
+                    </a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-2-006.jpeg">
+                        <img src="img/fotos-grupo-2-006.jpeg">
+                    </a>
+                </article>
+            </section>
+
+            <section id="fotos-home">
+                <a href="#" id="btn-naranja">+</a>
+                <nav>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-001.jpg" id="img-fotos-home-01"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-002.jpg" id="img-fotos-home-02"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-003.jpg" id="img-fotos-home-03"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-004.jpg" id="img-fotos-home-04"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-001.jpg" id="img-fotos-home-05"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-002.jpg" id="img-fotos-home-06"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-003.jpg" id="img-fotos-home-07"></a>
+                    <a data-fancybox="galeria-2" href="img/fotos-grupo-1-004.jpg" id="img-fotos-home-08"></a>
+                </nav>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+        
+
+
+        <!-- Zona de Scripts -->
+
+        <!-- Carga de jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+        <!-- Cargar librería jQuery Easing -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Cargar librería FancyApps.com -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+        <!-- Cargar Librería Slick Slider -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <!-- JS propio -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
